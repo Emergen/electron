@@ -5,7 +5,9 @@ import sys
 import zipfile
 
 EXTENSIONS_TO_SKIP = [
-  '.pdb'
+  '.pdb',
+  '.mojom.js',
+  '.mojom-lite.js',
 ]
 
 PATHS_TO_SKIP = [
@@ -17,6 +19,9 @@ PATHS_TO_SKIP = [
   # //chrome/browser/resources/ssl/ssl_error_assistant, but we don't need to
   # ship it.
   'pyproto',
+
+  # https://github.com/electron/electron/issues/19075
+  'resources/inspector',
 ]
 
 def skip_path(dep, dist_zip, target_cpu):
