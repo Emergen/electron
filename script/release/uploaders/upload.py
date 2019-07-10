@@ -23,7 +23,7 @@ from lib.util import get_electron_branding, execute, get_electron_version, \
                      get_out_dir, SRC_DIR, ELECTRON_DIR
 
 
-ELECTRON_REPO = 'electron/electron'
+ELECTRON_REPO = 'emergen/electron'
 ELECTRON_VERSION = get_electron_version()
 
 PROJECT_NAME = get_electron_branding()['project_name']
